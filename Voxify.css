@@ -1,0 +1,174 @@
+body {
+    margin-top: 90px;
+    font-family: 'Instrument Sans';
+    background: linear-gradient(270deg, #27045d, #430481, #7021ca);;
+    background-size: 400% 400%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 20vh;
+}
+
+header {
+    text-align: center;
+    margin-left: -28px;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    letter-spacing: 0.035rem;
+}
+
+.form1 {
+    margin-bottom: 13px;
+    width: 80%;
+    margin-left: 23px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+/*Language*/
+select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #3e2358a8;
+    color: #ffffff;
+}
+
+
+body.male-selected {
+    background: linear-gradient(270deg, #290264, #3a078c, #5d30b6); /* Light blue shades */
+    background-size: 400% 400%;
+    transition: background 1.5s ease-in-out; /* Smooth transition */
+}
+
+body.female-selected {
+    background: linear-gradient(270deg, #290264, #44066a, #8b12e1); /* Light purple shades */
+    background-size: 400% 400%;
+    transition: background 1.5s ease-in-out; /* Smooth transition */
+}
+
+
+
+/*text selection*/
+textarea, input[type="file"] {
+    width: 95%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #3e2358a8;
+    color: #ffffff;
+}
+
+/*Choose Voice*/
+.toggle-buttons {
+    display: flex;
+    gap: 10px;
+    align-items:first baseline;
+}
+
+input[type="radio"]:checked + label {
+    color: #fff;
+}
+
+/*play & download*/
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: left;
+  }
+  
+  button {
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background 0.3s ease;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 10px 15px;
+
+  }
+  
+  button:hover {
+    background: #abd3ff;
+    color: #6a11cb;
+    transform: scale(1.1);
+  }
+
+/*Speech Rate*/
+#rate-value {
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 1rem;
+    color: #ddd;
+    margin-right: 10px;
+}
+
+.rate-container {
+    display: flex;
+    align-items: center;
+}
+
+input[type="range"] {
+    width: 100%;
+  }
+
+
+
+/*Waves*/
+footer {
+    margin-bottom: -40px;
+    padding: 10;
+    width: 100%;
+    height: 20vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.waves {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.parallax > use {
+    animation: move-forever 25s cubic-bezier(.55,.5,.45,.5) infinite;
+}
+
+.parallax > use:nth-child(1) {
+    animation-delay: -2s;
+    animation-duration: 7s;
+}
+
+.parallax > use:nth-child(2) {
+    animation-delay: -3s;
+    animation-duration: 10s;
+}
+
+.parallax > use:nth-child(3) {
+    animation-delay: -4s;
+    animation-duration: 13s;
+}
+
+.parallax > use:nth-child(4) {
+    animation-delay: -5s;
+    animation-duration: 20s;
+}
+
+@keyframes move-forever {
+    0% {
+        transform: translate3d(-90px, 0, 0);
+    }
+    100% {
+        transform: translate3d(85px, 0, 0);
+    }
+}
